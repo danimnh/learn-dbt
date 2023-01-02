@@ -1,4 +1,4 @@
-stgo-dbt:
+stgo_dbt:
   outputs:
     dev:
       type: postgres
