@@ -26,7 +26,7 @@ select
     _airbyte_emitted_at,
     {{ current_timestamp() }} as _airbyte_normalized_at,
     _airbyte_users_7_hashid
-from {{ ref('users_7_ab3') }}
+from {{ ref('users_7') }}
 -- users_7 from {{ source('dbo', '_airbyte_raw_users_7') }}
 where 1 = 1
 {{ incremental_clause('_airbyte_emitted_at', this) }}
