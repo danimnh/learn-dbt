@@ -2,13 +2,13 @@ stgo_dbt:
   outputs:
     dev:
       type: postgres
-      threads: [1 or more]
-      host: [host]
-      port: [port]
-      user: [dev_username]
-      pass: [dev_password]
-      dbname: [dbname]
-      schema: [dev_schema]
+      threads: 4
+      host: localhost
+      port: 5433
+      user: postgres
+      pass: password
+      dbname: postgres
+      schema: dbo
 
     prod:
       type: postgres
